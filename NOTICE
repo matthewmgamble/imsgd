@@ -1,0 +1,13 @@
+imsgd
+Copyright 2026 The imsgd authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+imsgd is an independent implementation. Its approach to reading the macOS
+Messages database, detecting changes and sending through Messages.app was
+informed by BlueBubbles Server (https://github.com/BlueBubblesApp/bluebubbles-server),
+Copyright BlueBubbles Development Team, licensed under the Apache License,
+Version 2.0. imsgd is not affiliated with or endorsed by the BlueBubbles project.
+
+"iMessage", "Messages" and "macOS" are trademarks of Apple Inc. imsgd is not
+affiliated with or endorsed by Apple.

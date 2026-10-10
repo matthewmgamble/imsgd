@@ -1,0 +1,30 @@
+# Build output
+/bin/
+/dist/
+*.test
+*.out
+*.prof
+coverage.*
+
+# Local configuration and secrets (the real config lives in ~/.config/imsgd/)
+/config.yml
+*.pem
+*.key
+*.p12
+
+# Private test artifacts: copies of real Messages data must never be committed.
+# (Synthetic fixtures under internal/ and fuzz corpora are fine.)
+/testdata/private/
+
+# Internal planning and working notes
+/PLAN.md
+/docs/decisions.md
+/docs/porting-reference.md
+/.claude/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

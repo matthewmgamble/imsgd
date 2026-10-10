@@ -1,0 +1,19 @@
+# imsgd configuration. Copy to ~/.config/imsgd/config.yml
+listen: ""            # bind address; empty = all interfaces
+port: 8642
+log_level: info       # debug, info, warn, error
+# log_file: ~/Library/Logs/imsgd/imsgd.log
+api_keys:             # one per consuming application; keys must be >= 16 chars
+  - name: example-app
+    key: "change-me-to-a-long-random-string"   # e.g. openssl rand -hex 24
+contacts:
+  enabled: true       # resolve sender names from the Mac's Contacts
+  # region: CA        # default phone region for numbers saved without a country code (default: the Mac's region)
+upload_max_mb: 100    # max size of a send request, attachments included
+cache_max_mb: 2048    # converted-attachment cache (HEIC→JPEG etc.)
+send_rate_per_minute: 60  # per API key; bursts of 20
+# cors_origins:       # browser apps allowed to call the REST API
+#   - http://192.168.1.50:3000
+# tls:
+#   cert_file: ~/.config/imsgd/cert.pem
+#   key_file:  ~/.config/imsgd/key.pem
